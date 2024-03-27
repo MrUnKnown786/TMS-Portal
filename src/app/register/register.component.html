@@ -1,0 +1,36 @@
+<div class="register-main">
+    <div class="register-top">
+        <h2>Sign Up</h2>
+        <h3>Create an account</h3>
+        <form [formGroup]="SignUpForm" (ngSubmit)="onSubmit()">
+            <div class="form-top">
+                <div class="form-template">
+                    <label for="inputname" class="form-label">Name<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                    <input formControlName="name" class="form-control" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-template">
+                    <label for="inputemail" class="form-label">Email<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                    <input formControlName="email" class="form-control" type="email" placeholder="Enter your Email" required>
+                </div>
+            </div>
+            <div class="form-top">
+                <div class="form-template">
+                    <label for="inputpassword" class="form-label">Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                    <input formControlName="password" class="form-control" type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-template">
+                    <label for="inputconfirmpassword" class="form-label">Confirm Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                    <input formControlName="confirmPassword" class="form-control" type="password" placeholder="Confirm Password" required>
+                </div>
+            </div>
+            <div class="form-top">
+                <a><button type="submit" class="btn">Sign Up <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt=">"></button></a>
+            </div>
+        </form>
+    </div>
+    <div class="register-bottom">
+        <p>
+            Already have an account? <a href="/login">Sign In</a>
+        </p>
+    </div>
+</div>

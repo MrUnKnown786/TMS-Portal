@@ -1,0 +1,50 @@
+.darshan-main{
+    width: 80%;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.darshan-top{
+    width: 80%;
+    display: block;
+}
+
+.darshan-top h2{
+    font-size: 28px;
+    color: #991403;
+    font-weight: 600;
+    margin-bottom: 4px!important;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+.form-label{
+    font-size: 20px;
+    margin-bottom: 7px!important;
+    font-weight: 500;
+    display: block;
+}
+
+.dropdown-custom{
+    width: 100%;
+    height: 44px;
+    margin-bottom: 15px;
+    border: none;
+    font-weight: 400;
+    background-color: #eaeaea;
+    box-shadow: none;
+    outline: none;
+    padding-right: 30px;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    color: red;
+}
