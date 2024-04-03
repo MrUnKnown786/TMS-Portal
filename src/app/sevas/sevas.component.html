@@ -1,1 +1,94 @@
-<p>sevas works!</p>
+<div class="darshan-main">
+    <div class="darshan-top">
+        <h2>Seva Booking</h2>
+        <form [formGroup]="darshanBooking" (submit)="OnSubmit()">
+            <label for="inputtemplename" class="form-label">Select Temple<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+            <select class="dropdown-custom" formControlName="templeName" (change)="dropDownChange()">
+                <option value="0">Select</option>
+                <option *ngFor="let name of templeNames; index as i" value="{{ i+1 }}">{{ name }}</option>
+            </select>
+            <label for="inputtype" class="form-label">Select Seva Type<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+            <div *ngIf="selectedValue == 0">
+                <p class="message">
+                    No Seva found. Please select temple name first to get types of Sevas.
+                </p>
+            </div>
+
+            <div *ngIf="selectedValue != 0">
+                <select class="dropdown-custom" [formControlName]="'sevaType'">
+                    <option *ngFor="let type of sevaTypes; index as i" value="{{ i+1 }}">{{ type }} -- Rs. 150.00</option>
+                </select>
+            </div>
+            <div class="subDiv">
+                
+                <div class="form-top">
+                    <div class="form-template">
+                        <label for="inputdate" class="form-label" style="padding-top: 20px;">Select Date<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="date" class="form-control" type="text" placeholder="DD/MM/YYYY" required>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputpersons" class="form-label" style="padding-top: 20px;">Number of Person(s)<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <select style="width: 90%;" class="dropdown-custom" [formControlName]="'numberofpersons'">
+                            <option *ngFor="let number of [1,2]" value="{{ number }}">{{ number }}</option>
+                        </select>
+                        <p style="color: rgb(24, 24, 24); font-weight: 500; line-height: 1.7em; font-size: 1.1em; margin-top: -15px;">For Seva's Maximum 2 persons allowed</p>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputphone" class="form-label" style="padding-top: 20px;">Mobile Number<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="mobile" class="form-control" type="text" placeholder="+91" required>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="subDiv">
+                
+                <div class="form-top">
+                    <div class="form-template">
+                        <label for="inputname" class="form-label" style="padding-top: 20px;">Name<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="name" class="form-control" type="text" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputdateofbirth" class="form-label" style="padding-top: 20px;">Date of Birth<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="dob" class="form-control" type="text" placeholder="DD/MM/YYYY" required>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputgender" class="form-label" style="padding-top: 20px;">Gender<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <select style="width: 90%;" class="dropdown-custom" [formControlName]="'gender'">
+                            <option value="none" selected>Select a Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-top">
+                    <div class="form-template">
+                        <label for="inputidtype" class="form-label" style="padding-top: 20px;">ID Type<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <select style="width: 90%;" class="dropdown-custom" [formControlName]="'idtype'">
+                            <option value="none" selected>Please Select Valid ID</option>
+                            <option value="Aadhaar">Aadhaar</option>
+                            <option value="PAN">PAN</option>
+                            <option value="Passport">Passport</option>
+                        </select>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputidnumber" class="form-label" style="padding-top: 20px;">ID Number<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="idnumber" class="form-control" type="text" placeholder="Pleas enter your valid id number" required>
+                    </div>
+                    <div class="form-template">
+                        <label for="inputgothram" class="form-label" style="padding-top: 20px;">Gothram<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+                        <input formControlName="gothram" class="form-control" type="text" placeholder="Enter Gothram" required>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="subDiv">
+                <a><button type="submit" class="btn">Confirm Booking <img style="margin-left: 5px; max-height: 20px;" src="/assets/side.png" alt=">"></button></a>
+            </div>
+
+            
+        </form>
+    </div>
+</div>

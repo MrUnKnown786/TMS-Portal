@@ -43,8 +43,69 @@
     padding: 0 15px;
 }
 
-p{
+.message{
     font-size: 16px;
     text-align: center;
     color: red;
+}
+
+.subDiv{
+    border-top: 1px solid #cccaca;
+    margin-top: 30px;
+    display:block;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.form-top{
+    display: flex;
+    width: 100%;
+}
+
+.form-template{
+    display: block;
+    width: 100%;
+}
+
+.form-control{
+    width: 80%;
+    height: 44px;
+    margin-bottom: 15px;
+    border: none;
+    font-weight: 400;
+    background-color: #eaeaea;
+    box-shadow: none;
+    outline: none;
+    padding-right: 30px;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 0 15px;
+    display: block;
+}
+
+.btn{
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 19px;
+    float: left;
+    margin-bottom: 24px;
+    display: flex;
+    white-space: nowrap;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #991403;
+    align-items: center;
+    font-family: inherit;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: #ce5524;
+    color: black;
+    cursor: pointer;
 }
