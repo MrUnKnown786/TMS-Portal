@@ -16,6 +16,7 @@
 
             <div *ngIf="selectedValue != 0">
                 <select class="dropdown-custom" [formControlName]="'sevaType'">
+                    <option value="none">Select</option>
                     <option *ngFor="let type of sevaTypes; index as i" value="{{ i+1 }}">{{ type }} -- Rs. 150.00</option>
                 </select>
             </div>
@@ -24,7 +25,7 @@
                 <div class="form-top">
                     <div class="form-template">
                         <label for="inputdate" class="form-label" style="padding-top: 20px;">Select Date<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                        <input formControlName="date" class="form-control" type="text" placeholder="DD/MM/YYYY" required>
+                        <input formControlName="date" class="form-control" type="date" min="{{minDate | date:'yyyy-MM-dd'}}" required>
                     </div>
                     <div class="form-template">
                         <label for="inputpersons" class="form-label" style="padding-top: 20px;">Number of Person(s)<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
@@ -50,7 +51,7 @@
                     </div>
                     <div class="form-template">
                         <label for="inputdateofbirth" class="form-label" style="padding-top: 20px;">Date of Birth<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                        <input formControlName="dob" class="form-control" type="text" placeholder="DD/MM/YYYY" required>
+                        <input formControlName="dob" class="form-control" type="date" max="{{  maxDate | date:'yyy-MM-dd' }}" required>
                     </div>
                     <div class="form-template">
                         <label for="inputgender" class="form-label" style="padding-top: 20px;">Gender<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>

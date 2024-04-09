@@ -10,6 +10,9 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class DarsanComponent {
 
+  minDate = new Date();
+  maxDate = new Date();
+
   templeNames = ['Temple1', 'Temple2', 'Temple3'];
   darshanTypes = ['Type1', 'Type2', 'Type3'];
   selectedValue:any = 0;
@@ -23,7 +26,7 @@ export class DarsanComponent {
     gender: new FormControl('none'),
     idtype: new FormControl('none'),
     idnumber: new FormControl(),
-    darshanType: new FormControl()
+    darshanType: new FormControl('none')
 
   });
 
@@ -32,6 +35,8 @@ export class DarsanComponent {
       this.router.navigate(['login']);
     }
 
+    this.minDate.setDate(this.minDate.getDate() + 1);
+    this.maxDate.setFullYear(this.maxDate.getFullYear() - 13)
   }
 
 

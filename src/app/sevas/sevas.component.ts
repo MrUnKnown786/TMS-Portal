@@ -10,6 +10,9 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class SevasComponent {
 
+  minDate = new Date();
+  maxDate = new Date();
+
   templeNames = ['Temple1', 'Temple2', 'Temple3'];
   sevaTypes = ['Type1', 'Type2', 'Type3'];
   selectedValue:any = 0;
@@ -23,7 +26,7 @@ export class SevasComponent {
     gender: new FormControl('none'),
     idtype: new FormControl('none'),
     idnumber: new FormControl(),
-    sevaType: new FormControl(),
+    sevaType: new FormControl('none'),
     gothram: new FormControl()
 
   });
@@ -33,9 +36,14 @@ export class SevasComponent {
       this.router.navigate(['login']);
     }
 
+    this.minDate.setDate(this.minDate.getDate() + 1);
+    this.maxDate.setFullYear(this.maxDate.getFullYear() - 13)
+
   }
 
-
+  get mobile() {
+    return this.darshanBooking.get('mobile');
+  }
 
   dropDownChange(){
     this.selectedValue = this.darshanBooking.value.templeName;
