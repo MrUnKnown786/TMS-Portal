@@ -9,6 +9,7 @@ import { SevasComponent } from './sevas/sevas.component';
 import { DarsanComponent } from './darsan/darsan.component';
 import { DonationComponent } from './donation/donation.component';
 import { TemplesComponent } from './temples/temples.component';
+import { TempleComponent } from './temple/temple.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'sevas', component:SevasComponent},
   {path:'darshan', component:DarsanComponent},
   {path:'donation', component:DonationComponent},
-  {path:'temples', component:TemplesComponent}
+  {path:'temples', component:TemplesComponent},
+  {path:'temple/:id', component:TempleComponent}
 ];
 
 @NgModule({

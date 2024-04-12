@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,8 @@ import { SevasComponent } from './sevas/sevas.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { DonationComponent } from './donation/donation.component';
 import { TemplesComponent } from './temples/temples.component';
+import { TempleComponent } from './temple/temple.component';
+import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { TemplesComponent } from './temples/temples.component';
     SevasComponent,
     AccomodationComponent,
     DonationComponent,
-    TemplesComponent
+    TemplesComponent,
+    TempleComponent,
+    BookingConfirmationComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,8 @@ import { TemplesComponent } from './temples/temples.component';
     MatMenuModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

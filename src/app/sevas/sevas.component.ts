@@ -41,10 +41,6 @@ export class SevasComponent {
 
   }
 
-  get mobile() {
-    return this.darshanBooking.get('mobile');
-  }
-
   dropDownChange(){
     this.selectedValue = this.darshanBooking.value.templeName;
   }

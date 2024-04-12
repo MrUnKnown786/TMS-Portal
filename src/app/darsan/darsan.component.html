@@ -5,7 +5,7 @@
             <label for="inputtemplename" class="form-label">Select Temple<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
             <select class="dropdown-custom" formControlName="templeName" (change)="dropDownChange()">
                 <option value="0">Select</option>
-                <option *ngFor="let name of templeNames; index as i" value="{{ i+1 }}">{{ name }}</option>
+                <option *ngFor="let name of templeNames" value="{{ name.id }}">{{ name.templeName }}</option>
             </select>
             <label for="inputtype" class="form-label">Select Darshanam Type<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
             <div *ngIf="selectedValue == 0">
@@ -17,7 +17,7 @@
             <div *ngIf="selectedValue != 0">
                 <select class="dropdown-custom" [formControlName]="'darshanType'">
                     <option value="none">Select</option>
-                    <option *ngFor="let type of darshanTypes; index as i" value="{{ i+1 }}">{{ type }} -- Rs. 150.00</option>
+                    <option *ngFor="let type of darshanTypes; index as i" value="{{type.id}}">{{ type.darshanName }}, Time: {{type.time}}, Amount: Rs.{{type.amount}}/-</option>
                 </select>
             </div>
             <div class="subDiv">
@@ -84,8 +84,7 @@
             <div class="subDiv">
                 <a><button type="submit" class="btn">Confirm Booking <img style="margin-left: 5px; max-height: 20px;" src="/assets/side.png" alt=">"></button></a>
             </div>
-
-            
+          
         </form>
     </div>
 </div>
