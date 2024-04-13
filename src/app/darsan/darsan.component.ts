@@ -30,7 +30,8 @@ export class DarsanComponent implements OnInit {
     idtype: new FormControl('none'),
     idnumber: new FormControl(),
     darshanType: new FormControl('none'),
-    bookingType: new FormControl('Darshan')
+    bookingType: new FormControl(),
+    gothram: new FormControl()
   });
 
   constructor(private appComponent:AppComponent, private router:Router,private formBuilder:FormBuilder, private temple:TempleService, private darshan:DarshanService, private booking:BookingService){
@@ -39,7 +40,7 @@ export class DarsanComponent implements OnInit {
     }
 
     this.minDate.setDate(this.minDate.getDate() + 1);
-    this.maxDate.setFullYear(this.maxDate.getFullYear() - 13)
+    this.maxDate.setFullYear(this.maxDate.getFullYear() - 13);
   }
 
   ngOnInit(): void {

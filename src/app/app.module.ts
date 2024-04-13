@@ -21,6 +21,7 @@ import { DonationComponent } from './donation/donation.component';
 import { TemplesComponent } from './temples/temples.component';
 import { TempleComponent } from './temple/temple.component';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BookingConfirmationComponent } from './booking-confirmation/booking-con
     DonationComponent,
     TemplesComponent,
     TempleComponent,
-    BookingConfirmationComponent
+    BookingConfirmationComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,

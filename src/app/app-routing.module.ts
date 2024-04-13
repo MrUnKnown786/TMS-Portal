@@ -10,6 +10,7 @@ import { DarsanComponent } from './darsan/darsan.component';
 import { DonationComponent } from './donation/donation.component';
 import { TemplesComponent } from './temples/temples.component';
 import { TempleComponent } from './temple/temple.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'darshan', component:DarsanComponent},
   {path:'donation', component:DonationComponent},
   {path:'temples', component:TemplesComponent},
-  {path:'temple/:id', component:TempleComponent}
+  {path:'temple/:id', component:TempleComponent},
+  {path:'under', component:UnderConstructionComponent}
 ];
 
 @NgModule({

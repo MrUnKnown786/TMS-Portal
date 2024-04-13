@@ -1,0 +1,71 @@
+{
+  "Temples": [
+    {
+      "id": "1",
+      "templeName": "Temple 1",
+      "address": "Address 1, City 1, State 1, Zip Code, 54542",
+      "imgPath": "temple-img.jpg"
+    },
+    {
+      "id": "2",
+      "templeName": "Temple 2",
+      "address": "Address 2, City 2, State 2, Zip Code, 44342",
+      "imgPath": "temple-img-2.jpg"
+    },
+    {
+      "id": "3",
+      "templeName": "Temple 3",
+      "address": "Address 3, City 3, State 3, Zip Code, 56542",
+      "imgPath": "temple-img-3.jpg"
+    }
+  ],
+  "Darshan": [
+    {
+      "id": "1",
+      "darshanName": "Special Entry Darshan",
+      "time": "10:00 AM to 5:00 PM",
+      "amount": "100",
+      "templeId": "1"
+    },
+    {
+      "id": "2",
+      "darshanName": "Special Entry Darshan 1",
+      "time": "10:00 AM to 5:00 PM",
+      "amount": "100",
+      "templeId": "1"
+    },
+    {
+      "id": "3",
+      "darshanName": "Special Entry Darshan 2",
+      "time": "10:00 AM to 5:00 PM",
+      "amount": "100",
+      "templeId": "2"
+    }
+  ],
+  "Seva": [
+    {
+      "id": "1",
+      "sevaName": "Seva 1",
+      "time": "10:00 AM to 11:00 AM",
+      "amount": "500",
+      "templeId": "1"
+    },
+    {
+      "id": "2",
+      "sevaName": "Seva 2",
+      "time": "06:00 AM to 8:00 AM",
+      "amount": "300",
+      "templeId": "1"
+    },
+    {
+      "id": "3",
+      "sevaName": "Special 2",
+      "time": "10:00 AM to 5:00 PM",
+      "amount": "600",
+      "templeId": "2"
+    }
+  ],
+  "Bookings": [
+    
+  ]
+}
