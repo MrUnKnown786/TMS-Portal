@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'TMS-Portal';
-  isLoggedIn = true;
-  userName = "Sanjay Kumar";
+  isLoggedIn = false;
+  userName:any;
 
+  constructor() {
+    
+    if(localStorage.getItem("isLoggedIn")){
+      this.isLoggedIn = true;
+      this.userName = localStorage.getItem("userName");
+    }
+  }
+
+  LogOut(){
+    localStorage.clear();
+    this.isLoggedIn = false;
+  }
 }

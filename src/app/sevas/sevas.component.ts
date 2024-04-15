@@ -70,6 +70,7 @@ export class SevasComponent implements OnInit {
 
     this.booking.saveBooking(this.sevaBooking.value).subscribe((result)=>{
       console.warn("result is here",result);
+      this.router.navigate(['booking-confirmation']);
     })
   }
 
