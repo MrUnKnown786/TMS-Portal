@@ -135,12 +135,7 @@
     }
   ],
   "User": [
-    {
-      "id": "c311",
-      "name": "Sanjay",
-      "email": "sanjay@gmail.com",
-      "password": "Sanjay@123"
-    }
+   
   ],
   "Donation": [],
   "Bookings": [
