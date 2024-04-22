@@ -22,6 +22,9 @@ import { TemplesComponent } from './temples/temples.component';
 import { TempleComponent } from './temple/temple.component';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { MybookingsComponent } from './mybookings/mybookings.component';
+import { BookingDetailsComponent } from './booking-details/booking-details.component';
+import { DonationSuccessComponent } from './donation-success/donation-success.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     TemplesComponent,
     TempleComponent,
     BookingConfirmationComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    MybookingsComponent,
+    BookingDetailsComponent,
+    DonationSuccessComponent
   ],
   imports: [
     BrowserModule,

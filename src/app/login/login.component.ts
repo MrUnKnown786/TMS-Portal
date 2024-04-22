@@ -29,7 +29,7 @@ export class LoginComponent {
       this.item = result;
   
 
-      localStorage.setItem('Userid', this.item[0].id);
+      localStorage.setItem('userId', this.item[0].id);
       localStorage.setItem('isLoggedIn', "true");
       localStorage.setItem('userName',this.item[0].name);
       location.reload();

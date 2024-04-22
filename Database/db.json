@@ -1,72 +1,149 @@
 {
   "Temples": [
     {
-      "id": "1",
-      "templeName": "Temple 1",
-      "address": "Address 1, City 1, State 1, Zip Code, 54542",
-      "imgPath": "temple-img.jpg"
+      "id": "u9fu",
+      "templeName": "Sri Sampath Vinayaka Temple",
+      "address": "Sampath Vinayaka Temple Rd, CBM Compound, Asilmetta, Visakhapatnam, Andhra Pradesh 530003, India",
+      "imgPath": "Vinayaka-vskp.jpeg",
+      "about": "Sri Sampath Vinayaka Swamy Temple was constructed in the year 1962 in the premises of M/s S.G.SAMBANDAM & Co. in the Asilmetta area. The purpose was to offer a place of worship for the family members and staff and also to ward off possible VASTU DOSHA of the building. Soon the local fishermen started offering prayers at the temple. while taking their Catch to the market They also started DEEPARADHANA at this temple and started experiencing miracles in their lives. <br>5 years later when the Paramacharya of Kanchi Kamakoti Peetham His Holiness Sri Chandrasekharendra Saraswati Swamy reconsecrated the shrine and placed the GANAPATHY YANTRAM with his own hands. Since then the temple became popular with devotees increasing day by day. <br>During the 1971 Indo - Pak war the then Admiral Krishnan of Eastern Naval Command broke 1001 Coconuts in the temple and prayed for warding off Pakistani attack on the City from the sea. Within a few days, a Pakistani Submarine Ghazi tried to attack the port city was destroyed and the city and the citizens were spared from death and destruction.",
+      "timings": "05:30 AM to 10:30 AM and 05:30 PM to 08:30 PM"
     },
     {
-      "id": "2",
-      "templeName": "Temple 2",
-      "address": "Address 2, City 2, State 2, Zip Code, 44342",
-      "imgPath": "temple-img-2.jpg"
+      "id": "p93j",
+      "templeName": "Sri Anantha Padmanabha Swami Temple",
+      "address": "Ananthagiri Road, Vikarabad, Burgupally, Telangana 501201, India",
+      "imgPath": "Padmanabha-vik.jpeg",
+      "about": "Sri Anantha Padmanabha Swamy Temple is a Hindu temple located in Ananthagiri, Vikarabad district Vikarabad in Telangana, India. It is a temple of Lord Vishnu. The Head priest of this temple is Sri Nalapur Sitaram Chary. According to Skanda Purana, it is believed the temple is installed by the Rishi Markandeya in Dwapara Yuga. Attracted by the peaceful atmosphere of Ananthagiri hills Markandeya Rishi came here for yoga sadhana. Every day Markandeya used to go to Kasi from Ananthagiri to take a holy bath in the Ganges through a cave due to his yoga sadhana. On one day he was not able to go to Kasi as Dwadasi enter the early hours of the morning. Lord gave Darshana in a dream and arranged the Ganges to flow to perform a holy bath for Rishi.",
+      "timings": "07:30 AM to 01:00 PM and 03:00 PM to 08:00 PM"
     },
     {
-      "id": "3",
-      "templeName": "Temple 3",
-      "address": "Address 3, City 3, State 3, Zip Code, 56542",
-      "imgPath": "temple-img-3.jpg"
+      "id": "ksi7",
+      "templeName": "Sri Subramanyeswara Swamy Temple - Mopidevi",
+      "address": "Mopidevi Village, Mopidevi - Mandal, Krishna District, Andhra Pradesh 521125, India",
+      "imgPath": "mopidevi-ap.jpg",
+      "about": "According to holy texts, Vindhya Mountain, at one time became overconfident of its strength and began to grow upwards. It went up to the planet Ravi. With this, darkness surmounted all over and all mortals and immortals including every flora and fauna suffered in darkness.Gods prayed to Sage Agasthya to somehow humble the Vindhya Mountain. Sage Agasthya is known to have attained divine powers through severe penance. He was staying in Varanasi at that time. He, accepted the request of Devas, Sage Agasthya started towards the mountain Vindhya from Northern India. Vidhya Mountain is the boarder between North India and South India. Knowing in advance about the arrival of Sage Agasthya, the Vindhya Mountain humbled himself to the lowest level so as to give way to the sage. While crossing the Vindhya Mountain, Sage Agasthya has taken promise from Vindhyaa to be in humbled state till he returns from his tour of Southern India. But the sage did not return. He settled in South India. Waiting for ages together, Vidhya Mountain remained humbled even today.<br>Sage Agasthya along with his retinue had the occasion to pass through the place, where Lord Subrahmanyeswara did severe penance. He identified the place and said that this area is covered by Tigers and from here if we go towards the Eastern direction, one can find the divine temple of Lord Kumaraswamy known as Subrahmanyeswara. By visiting this temple with devotion, one can get earning all through the life and also attain salvation. It is pertinent to note that the presiding deity of Vijayawada Kanaka Durga rides on Tiger.<br>Lord Subrahmanyeswara is the son of Lord Shiva and Goddess Parvathi. While Lord Subrahmanyeswara was in her womb, Goddess Parvathi could not bear the power of the foetus and hence transferred the same to Ganga Devi. Ganga also could not bear the power of the foetus and hence the foetus slipped into the reed grass. Six female minor deities called Krittika took care of the embryo. Imbibing the strengths of both Lord Shiva and Goddess Parvathi, Lord Subrahmanyeswara was born in the the month of Margasiramasam on Shashti day of waxing Moon with six heads, twelve hands, lot of brilliance, luster and the radiance of Sun. Devotees specially worship Lord Subrahmanyeswara on the days of Ashada Sukla Panchami, Naga Panchami, Nagaula Chaviti and Shashti.",
+      "timings": "05:30 AM to 01:00 PM and 04:00 PM to 08:00 PM"
     }
   ],
   "Darshan": [
     {
-      "id": "1",
-      "darshanName": "Special Entry Darshan",
-      "time": "10:00 AM to 5:00 PM",
-      "amount": "100",
-      "templeId": "1"
+      "id": "e65f",
+      "darshanName": "Seegra Darshanam",
+      "time": "08:00 AM to 10:00 AM and 06:00 PM to 07:30 PM",
+      "amount": "50",
+      "templeId": "u9fu"
     },
     {
-      "id": "2",
-      "darshanName": "Special Entry Darshan 1",
-      "time": "10:00 AM to 5:00 PM",
-      "amount": "100",
-      "templeId": "1"
+      "id": "ef68",
+      "darshanName": "Special Darshan",
+      "time": "08:30 AM to 12:30 PM and 03:30 PM to 07:30 PM",
+      "amount": "30",
+      "templeId": "p93j"
     },
     {
-      "id": "3",
-      "darshanName": "Special Entry Darshan 2",
-      "time": "10:00 AM to 5:00 PM",
+      "id": "h6r8",
+      "darshanName": "Garbalaya Darshnan",
+      "time": "10:00 AM to 11:00 PM and 05:00 PM to 06:00 PM",
       "amount": "100",
-      "templeId": "2"
+      "templeId": "p93j"
+    },
+    {
+      "id": "vsd5",
+      "darshanName": "Seegra Darshanam",
+      "time": "08:00 AM to 12:00 PM and 04:00 PM to 07:30 PM",
+      "amount": "100",
+      "templeId": "ksi7"
+    },
+    {
+      "id": "dgsd",
+      "darshanName": "Athi Seegra Darshanam",
+      "time": "08:00 AM to 12:00 PM and 04:00 PM to 07:30 PM",
+      "amount": "200",
+      "templeId": "ksi7"
     }
   ],
   "Seva": [
     {
-      "id": "1",
-      "sevaName": "Seva 1",
-      "time": "10:00 AM to 11:00 AM",
-      "amount": "500",
-      "templeId": "1"
-    },
-    {
-      "id": "2",
-      "sevaName": "Seva 2",
-      "time": "06:00 AM to 8:00 AM",
+      "id": "qdcf",
+      "sevaName": "Homam",
+      "time": "07:00 AM to 09:00 AM",
       "amount": "300",
-      "templeId": "1"
+      "templeId": "u9fu"
     },
     {
-      "id": "3",
-      "sevaName": "Special 2",
-      "time": "10:00 AM to 5:00 PM",
-      "amount": "600",
-      "templeId": "2"
+      "id": "wc68",
+      "sevaName": "Abhishekam",
+      "time": "05:30 AM to 06:30 AM",
+      "amount": "200",
+      "templeId": "u9fu"
+    },
+    {
+      "id": "sdfs",
+      "sevaName": "Archana",
+      "time": "08:00 AM to 10:00 AM and 06:00 PM to 07:30 PM",
+      "amount": "50",
+      "templeId": "u9fu"
+    },
+    {
+      "id": "tdhb",
+      "sevaName": "Maha Aarti",
+      "time": "08:00 PM to 08:30 PM",
+      "amount": "50",
+      "templeId": "u9fu"
+    },
+    {
+      "id": "d58c",
+      "sevaName": "Archana",
+      "time": "09:00 AM to 12:00 PM and 04:00 PM to 07:00 PM",
+      "amount": "30",
+      "templeId": "p93j"
+    },
+    {
+      "id": "wef6",
+      "sevaName": "Abhishekam",
+      "time": "07:30 AM to 08:30 AM",
+      "amount": "50",
+      "templeId": "p93j"
+    },
+    {
+      "id": "brs6",
+      "sevaName": "Swami Vari Kalyanam",
+      "time": "11:00 AM to 12:30 PM",
+      "amount": "150",
+      "templeId": "p93j"
+    },
+    {
+      "id": "dgsd",
+      "sevaName": "Abhishekam, Alankarana, Harathi",
+      "time": "04:30 AM to 07:30 AM",
+      "amount": "300",
+      "templeId": "ksi7"
+    },
+    {
+      "id": "jgf6",
+      "sevaName": "Archana",
+      "time": "07:30 AM to 12:00 PM and 02:00 PM to 06:30 PM",
+      "amount": "50",
+      "templeId": "ksi7"
+    },
+    {
+      "id": "pcjt",
+      "sevaName": "Maha Harathi",
+      "time": "07:00 PM to 07:30 PM",
+      "amount": "100",
+      "templeId": "ksi7"
     }
   ],
-  "Bookings": [],
   "User": [
+    {
+      "id": "c311",
+      "name": "Sanjay",
+      "email": "sanjay@gmail.com",
+      "password": "Sanjay@123"
+    }
+  ],
+  "Donation": [],
+  "Bookings": [
     
   ]
 }

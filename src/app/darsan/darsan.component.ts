@@ -16,9 +16,11 @@ export class DarsanComponent implements OnInit {
   minDate = new Date();
   maxDate = new Date();
   list:any;
-  templeNames:any;
-  darshanTypes:any;
+  templeNames:any = [];
+  darshanTypes:any = [];
   selectedValue:any = 0;
+  typeValue:any = 0;
+  numbers:any = 0;
   darshanBooking = this.formBuilder.group({
     templeName : new FormControl(0),
     date: new FormControl(),
@@ -29,9 +31,13 @@ export class DarsanComponent implements OnInit {
     gender: new FormControl('none'),
     idtype: new FormControl('none'),
     idnumber: new FormControl(),
-    darshanType: new FormControl('none'),
-    bookingType: new FormControl(),
-    gothram: new FormControl()
+    darshanType: new FormControl('0'),
+    bookingType: new FormControl('Darshan'),
+    gothram: new FormControl(),
+    userId: new FormControl(localStorage.getItem("userId")),
+    time: new FormControl(),
+    address: new FormControl(),
+    amount: new FormControl()
   });
 
   constructor(private appComponent:AppComponent, private router:Router,private formBuilder:FormBuilder, private temple:TempleService, private darshan:DarshanService, private booking:BookingService){
@@ -57,7 +63,9 @@ export class DarsanComponent implements OnInit {
       this.darshanTypes = [];
       return;
     }
-    this.darshan.getlistbyid(this.selectedValue).subscribe((result)=>{
+    let id = this.templeNames[this.selectedValue-1].id;
+
+    this.darshan.getlistbyid(id).subscribe((result)=>{
       console.warn(result);
       this.darshanTypes = result;
     });
@@ -66,9 +74,19 @@ export class DarsanComponent implements OnInit {
   OnSubmit(){
     console.log(this.darshanBooking.value);
 
+    this.typeValue = this.darshanBooking.value.darshanType;
+    this.darshanBooking.value.darshanType = this.darshanTypes[this.typeValue].darshanName;
+    this.darshanBooking.value.time = this.darshanTypes[this.typeValue].time;
+
+    this.darshanBooking.value.templeName = this.templeNames[this.selectedValue-1].templeName;
+    this.darshanBooking.value.address = this.templeNames[this.selectedValue-1].address;
+
+    this.numbers = this.darshanBooking.value.numberofpersons;
+    this.darshanBooking.value.amount = String(Number(this.darshanTypes[this.typeValue].amount) * Number(this.numbers));
 
     this.booking.saveBooking(this.darshanBooking.value).subscribe((result)=>{
       console.warn("result is here",result);
+      this.router.navigate(['booking-confirmation']);
     })
   }
 

@@ -17,8 +17,8 @@
       <img src="../assets/dropdown.png" alt="icon" height="8px">
     </button>
     <mat-menu #menu="matMenu" style="font-family: inherit;">
-      <a mat-menu-item>Bookings</a>
-      <a mat-menu-item>Profile</a>
+      <a href="/mybookings" mat-menu-item>Bookings</a>
+      <a href="/under-construction" mat-menu-item>Profile</a>
       <button (click)="LogOut()" mat-menu-item>Logout</button>
     </mat-menu>
   </div>
@@ -43,11 +43,14 @@
     Donation
   </a>
   <a href='/support' class="menu-button">
-    Support
+    Contact Us
   </a>
 </mat-toolbar>
 
+
 <router-outlet></router-outlet>
+ 
+
 
 <footer class="footer-custom">
 

@@ -14,6 +14,8 @@ export class AccomodationComponent {
       this.router.navigate(['login']);
     }
 
+    this.router.navigate(['under-construction']);
+
   }
 
 }

@@ -1,0 +1,52 @@
+.divTag{
+    width: 96%;
+    padding: 30px;
+    display: block;
+}
+
+h2{
+    font-size: 28px;
+    color: #991403;
+    font-weight: 600;
+    margin-bottom: 4px!important;
+    line-height: 28px;
+    border-bottom: 1px solid #cccaca;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tag{
+    display: flex;
+    padding-left: 30px;
+}
+
+.content{
+    display: block;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.template-box{
+    width: 50%;
+    margin: 1%;
+    background: #fff;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 6px #626161;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.template-box h2{
+    padding-bottom: 0;
+    width: 90%;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.template{
+    width: 50%;
+}

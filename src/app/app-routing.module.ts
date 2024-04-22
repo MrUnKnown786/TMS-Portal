@@ -12,6 +12,8 @@ import { TemplesComponent } from './temples/temples.component';
 import { TempleComponent } from './temple/temple.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
+import { MybookingsComponent } from './mybookings/mybookings.component';
+import { DonationSuccessComponent } from './donation-success/donation-success.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -24,8 +26,10 @@ const routes: Routes = [
   {path:'donation', component:DonationComponent},
   {path:'temples', component:TemplesComponent},
   {path:'temple/:id', component:TempleComponent},
-  {path:'under', component:UnderConstructionComponent},
-  {path:'booking-confirmation', component:BookingConfirmationComponent}
+  {path:'under-construction', component:UnderConstructionComponent},
+  {path:'booking-confirmation', component:BookingConfirmationComponent},
+  {path:'mybookings',component:MybookingsComponent},
+  {path:'donationSucess',component:DonationSuccessComponent}
 ];
 
 @NgModule({

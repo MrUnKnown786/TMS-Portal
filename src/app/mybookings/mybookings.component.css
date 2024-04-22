@@ -1,0 +1,85 @@
+.service-heading{
+    color: #901017;
+    text-align: center;
+    padding-top: 45px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccaca;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.template{
+    align-items: center;
+    display: block;
+    margin-bottom: 50px;
+    padding-left: 80px;
+}
+
+.template-box{
+    width: 90%;
+    margin: 1%;
+    background: #fff;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 6px #626161;
+}
+
+h2{
+    font-size: 28px;
+    color: #991403;
+    font-weight: 600;
+    margin-bottom: 4px!important;
+    line-height: 28px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #cccaca;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.message{
+    font-size: 16px;
+    text-align: center;
+    color: red;
+}
+
+.tablediv{
+    margin: 10px 50px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+    width: 18%;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: grey;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}

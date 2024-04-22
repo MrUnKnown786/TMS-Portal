@@ -1,0 +1,74 @@
+.image{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.name{
+    text-align: center;
+}
+
+.name h1{
+    color: #901017;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name h3{
+    color: gray;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.head{
+    border-bottom: 1px solid #cccaca;
+    margin-bottom: 10px;
+}
+
+.head h1{
+    color: #901017;
+    margin-bottom: 0;
+}
+
+.tablediv{
+    margin: 10px 50px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+    width: 18%;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: grey;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}

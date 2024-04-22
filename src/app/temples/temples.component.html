@@ -7,10 +7,10 @@
         <div class="template-box" *ngFor="let temple of temples">
 
             <div class="image">
-                <img src="/assets/{{temple.imgPath}}" alt="-" height="195px">
+                <img src="/assets/{{temple.imgPath}}" alt="-" height="195px" style="max-width: 195px;">
             </div>
             <div class="text-template">
-                <a style="text-decoration: none;" href="/temple/{{temple.id}}"><h2 style="color: black;">{{temple.templeName}}</h2></a>
+                <a style="text-decoration: none;" href="/temple/{{temple.id}}"><h3 style="color: black; padding-bottom: 2px;">{{temple.templeName}}</h3></a>
                 <p>{{temple.address}}</p>
                 <a href="/temple/{{temple.id}}" style="text-decoration: none;"><button class="button-custom">View Details <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt="-" width="19px"></button></a>
             </div>

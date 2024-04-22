@@ -1,4 +1,61 @@
-<p>temple works!</p>
-Sanjay
+<div class="image">
+    <img src="/assets/{{imgPath}}" alt="-" height="300px">
+</div>
+<div class="name">
+    <h1>{{templeName}}</h1>
+    <h3>{{address}}</h3>
+    <h3>Timings: {{timings}}</h3>
+</div>
+<div class="section">
+    <div class="head">
+        <h1>About</h1>
+    </div>
+    <p [innerHTML]="about"></p>
 
-{{path}}
+</div>
+<div class="section">
+    <div class="head">
+        <h1>Darshanam</h1>
+    </div>
+    <div class="tablediv">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th scope="col">Darshanam Name</th>
+                    <th scope="col">Timings</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of darshanData">
+                    <td>{{item.darshanName}}</td>
+                    <td>{{item.time}}</td>
+                    <td>Rs. {{item.amount}}/-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="section">
+    <div class="head">
+        <h1>Seva</h1>
+    </div>
+    <div class="tablediv">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th scope="col">Seva Name</th>
+                    <th scope="col">Timings</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of sevaData">
+                    <td>{{item.sevaName}}</td>
+                    <td>{{item.time}}</td>
+                    <td>Rs. {{item.amount}}/-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

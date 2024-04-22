@@ -21,5 +21,6 @@ export class AppComponent {
   LogOut(){
     localStorage.clear();
     this.isLoggedIn = false;
+    location.reload();
   }
 }
