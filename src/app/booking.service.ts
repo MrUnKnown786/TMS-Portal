@@ -16,4 +16,9 @@ export class BookingService {
   getbookingbytype(type:any){
     return this.http.get(`http://localhost:3000/Bookings?bookingType=${type}&userId=${localStorage.getItem("userId")}`);
   }
+
+  getBookingById(id:any){
+    return this.http.get(`http://localhost:3000/Bookings?id=${id}&userId=${localStorage.getItem("userId")}`);
+  }
+
 }

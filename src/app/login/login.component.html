@@ -4,13 +4,28 @@
         <h3>Login to your Account</h3>
         <form [formGroup]="SignInForm" (ngSubmit)="onSubmit()">
             <div class="form-group" style="display: flex; flex-direction: column;">
-                <label for="inputEmail" class="form-label">Email<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                <input id="email" name="email" formControlName="email" class="form-control" type="email" placeholder="Enter your Email" required>
-                <label for="inputPassword" class="form-label">Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                <input formControlName="password" class="form-control" type="password" placeholder="Enter your Password" required> 
-                <a><button type="submit" class="btn">Sign In <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt=">"></button></a>
+                <div *ngIf="authenticationError" class="error">
+                    {{ authenticationError }}
+                </div>
+              <label for="inputEmail" class="form-label">Email<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+              <input id="email" name="email" formControlName="email" class="form-control" type="email" placeholder="Enter your Email" [ngClass]="{ 'is-invalid': SignInForm.get('email')?.invalid && (SignInForm.get('email')?.dirty || SignInForm.get('email')?.touched) }">
+              <div *ngIf="SignInForm.get('email')?.invalid && (SignInForm.get('email')?.dirty || SignInForm.get('email')?.touched)"
+                   class="text-danger">
+                <div *ngIf="SignInForm.get('email')?.errors?.['required']" class="error">Email is required.</div>
+                <div *ngIf="SignInForm.get('email')?.errors?.['email']" class="error">Invalid email format.</div>
+              </div>
+          
+              <label for="inputPassword" class="form-label">Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
+              <input formControlName="password" class="form-control" type="password" placeholder="Enter your Password" [ngClass]="{ 'is-invalid': SignInForm.get('password')?.invalid && (SignInForm.get('password')?.dirty || SignInForm.get('password')?.touched) }">
+              <div *ngIf="SignInForm.get('password')?.invalid && (SignInForm.get('password')?.dirty || SignInForm.get('password')?.touched)"
+                   class="text-danger">
+                <div *ngIf="SignInForm.get('password')?.errors?.['required']" class="error">Password is required.</div>
+              </div>
+          
+              <button type="submit" [disabled]="SignInForm.invalid" class="btn btn-primary">Sign In <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt=">"></button>
             </div>
-        </form>
+          </form>
+          
         <div class="login-bottom">
             <p>
                 Don't have an account? <a href="/register">Sign Up</a>

@@ -17,4 +17,8 @@ export class TempleService {
   getTempleById(id:any){
     return this.http.get(`http://localhost:3000/Temples?id=${id}`);
   }
+
+  getTempleByName(name:any){
+    return this.http.get(`http://localhost:3000/Temples?templeName=${name}`);
+  }
 }

@@ -1,1 +1,111 @@
-<p>booking-details works!</p>
+<div style="width: 100%;">
+    <div class="service-heading">
+        <h1>Booking Details</h1>
+    </div>
+    <div style="display: block; width: 90%; padding-left: 5%; padding-right: 5%;">
+        <div style="width: 100%; display: flex; padding-bottom: 20px;">
+            <div style="display: block; width: 70%; padding-right: 10px;">
+                <div class="tablediv" style="width: 100%;">
+                    <table class="fl-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Temple Name</th>
+                                <td style="text-align: left;">{{templeName}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Address</th>
+                                <td style="text-align: left;">{{address}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Booking Type</th>
+                                <td style="text-align: left;">{{bookingType}}</td>
+                            </tr>
+                        </thead>
+                        <thead *ngIf="!seva">
+                            <tr>
+                                <th scope="col">Darshanam</th>
+                                <td style="text-align: left;">{{type}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr *ngIf="seva">
+                                <th scope="col">Seva</th>
+                                <td style="text-align: left;">{{type}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <td style="text-align: left;">{{date | date:'dd-MMM-yyyy'}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <td style="text-align: left;">{{time}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Number of Persons</th>
+                                <td style="text-align: left;">{{numberofpersons}} Persons</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Mobile Number</th>
+                                <td style="text-align: left;">{{mobile}}</td>
+                            </tr>
+                        </thead>
+                        <thead *ngIf="seva">
+                            <tr>
+                                <th scope="col">Gothram</th>
+                                <td style="text-align: left;">{{gothram}}</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Amount</th>
+                                <td style="text-align: left;">Rs. {{amount}}/-</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+            <div style="display: block;width: 30%; padding-left: 10px; text-align: center;">
+                <img src="assets/{{img}}" width="350px">
+            </div>
+            
+        </div>
+        <div style="width: 100%; padding-bottom: 20px;">
+            <div class="tablediv">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date of Birth</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">ID Type</th>
+                            <th scope="col">ID Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{dob}}</td>
+                            <td>{{gender}}</td>
+                            <td>{{idtype}}</td>
+                            <td>{{idnumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

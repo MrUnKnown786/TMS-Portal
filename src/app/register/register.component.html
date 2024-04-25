@@ -6,25 +6,40 @@
             <div class="form-top">
                 <div class="form-template">
                     <label for="inputname" class="form-label">Name<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                    <input formControlName="name" class="form-control" type="text" placeholder="Enter your name" required>
+                    <input formControlName="name" class="form-control" type="text" placeholder="Enter your name" required [ngClass]="{ 'is-invalid': SignUpForm.get('name')?.invalid && (SignUpForm.get('name')?.dirty || SignUpForm.get('name')?.touched) }">
+                    <div *ngIf="SignUpForm.get('name')?.invalid && SignUpForm.get('name')?.touched" class="text-danger">
+                        <div *ngIf="SignUpForm.get('name')?.errors?.['required']" class="error">Name is required.</div>
+                    </div>
                 </div>
                 <div class="form-template">
                     <label for="inputemail" class="form-label">Email<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                    <input formControlName="email" class="form-control" type="email" placeholder="Enter your Email" required>
+                    <input formControlName="email" class="form-control" type="email" placeholder="Enter your Email" required [ngClass]="{ 'is-invalid': SignUpForm.get('email')?.invalid && (SignUpForm.get('email')?.dirty || SignUpForm.get('email')?.touched) }">
+                    <div *ngIf="SignUpForm.get('email')?.invalid && SignUpForm.get('email')?.touched" class="text-danger">
+                        <div *ngIf="SignUpForm.get('email')?.errors?.['required']" class="error">Email is required.</div>
+                        <div *ngIf="SignUpForm.get('email')?.errors?.['email']" class="error">Invalid email format.</div>
+                    </div>
                 </div>
             </div>
             <div class="form-top">
                 <div class="form-template">
                     <label for="inputpassword" class="form-label">Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                    <input formControlName="password" class="form-control" type="password" placeholder="Enter your password" required>
+                    <input formControlName="password" class="form-control" type="password" placeholder="Enter your password" required [ngClass]="{ 'is-invalid': SignUpForm.get('password')?.invalid && (SignUpForm.get('password')?.dirty || SignUpForm.get('password')?.touched) }">
+                    <div *ngIf="SignUpForm.get('password')?.invalid && SignUpForm.get('password')?.touched" class="error">
+                    <div *ngIf="SignUpForm.get('password')?.errors?.['required']">Password is required.</div>
+                    <div *ngIf="SignUpForm.get('password')?.errors?.['minlength']">Password must be at least 6 characters.</div>
+                    </div>
                 </div>
                 <div class="form-template">
                     <label for="inputconfirmpassword" class="form-label">Confirm Password<span style="color: red;padding-left: 3px;font-size: 15px;">*</span></label>
-                    <input class="form-control" type="password" placeholder="Confirm Password" required>
+                    <input formControlName="confirmPassword" class="form-control" type="password" placeholder="Confirm Password" required [ngClass]="{ 'is-invalid': SignUpForm.get('confirmPassword')?.invalid && (SignUpForm.get('confirmPassword')?.dirty || SignUpForm.get('confirmPassword')?.touched) }">
+                    <div *ngIf="SignUpForm.get('confirmPassword')?.invalid && SignUpForm.get('confirmPassword')?.touched" class="error">
+                        <div *ngIf="SignUpForm.get('confirmPassword')?.errors?.['required']">Confirm Password is required.</div>
+                        <div *ngIf="SignUpForm.hasError('passwordMismatch')">Passwords do not match.</div>
+                    </div>
                 </div>
             </div>
             <div class="form-top">
-                <a><button type="submit" class="btn">Sign Up <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt=">"></button></a>
+                <button [disabled]="SignUpForm.invalid" type="submit" class="btn">Sign Up <img style="margin-left: 5px;" src="/assets/orange-arrow.svg" alt=">"></button>
             </div>
         </form>
     </div>

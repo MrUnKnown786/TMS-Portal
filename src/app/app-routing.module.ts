@@ -14,6 +14,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 import { MybookingsComponent } from './mybookings/mybookings.component';
 import { DonationSuccessComponent } from './donation-success/donation-success.component';
+import { BookingDetailsComponent } from './booking-details/booking-details.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path:'under-construction', component:UnderConstructionComponent},
   {path:'booking-confirmation', component:BookingConfirmationComponent},
   {path:'mybookings',component:MybookingsComponent},
-  {path:'donationSucess',component:DonationSuccessComponent}
+  {path:'donationSucess',component:DonationSuccessComponent},
+  {path:'booking/:id',component:BookingDetailsComponent}
 ];
 
 @NgModule({
